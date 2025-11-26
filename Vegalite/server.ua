@@ -1,6 +1,6 @@
 Html ~ "git: github.com/uiua-lang/webua"
 
-Index ← Html!(Html {
+Index ← Html!(|0Html {
     Head {
       Title "Vega-Lite Bar Chart"
       Meta!°⊸Charset"utf-8"
@@ -15,8 +15,8 @@ Index ← Html!(Html {
     }
   })
 
-Route ← Html!(⍣(
-    ⍩(HtmlResp Index) °"/"
+Route ← |1 Html!(|1⍣(
+    |1⍩(HtmlResp Index) °"/"
   | NotFound
   ))
 
